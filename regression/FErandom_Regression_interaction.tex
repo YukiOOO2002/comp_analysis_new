@@ -1,0 +1,51 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Random effect Regression},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{32}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.1em},
+hline{35}={1-3}{solid, black, 0.1em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& (1) & (2) \\
+(Intercept) & \num{2.779}** & \num{3.605}*** \\
+& (\num{0.943}) & (\num{0.842}) \\
+alpha\_positive & \num{0.181} & \num{-0.341} \\
+& (\num{0.409}) & (\num{0.363}) \\
+beta\_positive & \num{-0.408} & \num{-1.050}+ \\
+& (\num{0.694}) & (\num{0.617}) \\
+a015 & \num{-0.483} & \num{-0.889} \\
+& (\num{0.896}) & (\num{0.796}) \\
+a03 & \num{5.638}*** & \num{8.184}*** \\
+& (\num{0.972}) & (\num{0.864}) \\
+a045 & \num{5.751}*** & \num{8.075}*** \\
+& (\num{0.847}) & (\num{0.753}) \\
+age & \num{0.084}** & \num{-0.035} \\
+& (\num{0.031}) & (\num{0.028}) \\
+gender & \num{0.145} & \num{0.328}+ \\
+& (\num{0.194}) & (\num{0.172}) \\
+affiliation & \num{-0.050}*** & \num{-0.035}** \\
+& (\num{0.015}) & (\num{0.013}) \\
+alpha\_positive × a015 & \num{0.034} & \num{0.913}+ \\
+& (\num{0.594}) & (\num{0.528}) \\
+beta\_positive × a015 & \num{2.395}** & \num{2.680}*** \\
+& (\num{0.887}) & (\num{0.788}) \\
+alpha\_positive × a03 & \num{-0.967}+ & \num{-0.343} \\
+& (\num{0.576}) & (\num{0.512}) \\
+beta\_positive × a03 & \num{0.319} & \num{0.485} \\
+& (\num{0.930}) & (\num{0.827}) \\
+alpha\_positive × a045 & \num{0.118} & \num{0.039} \\
+& (\num{0.562}) & (\num{0.499}) \\
+beta\_positive × a045 & \num{0.050} & \num{0.198} \\
+& (\num{0.854}) & (\num{0.759}) \\
+Num.Obs. & \num{960} & \num{960} \\
+R2 & \num{0.445} & \num{0.686} \\
+Mean (Contribute) & \num{3.667} & \num{1.408} \\
+\end{talltblr}
+\end{table}

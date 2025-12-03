@@ -1,0 +1,35 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Probit Models: Marginal Effects on Contribution},
+note{}={Standard errors in parentheses. * p < 0.1, ** p < 0.05, *** p < 0.01},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{18}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.1em},
+hline{19}={1-3}{solid, black, 0.1em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Contribute Full & Contribute Non \\
+affiliation & \num{-0.004} *** & \num{0.003} * \\
+& (\num{0.001}) & (\num{0.001}) \\
+age & \num{0.003} & \num{0.002} \\
+& (\num{0.002}) & (\num{0.002}) \\
+alpha\_med & \num{-0.336} *** & \num{0.101} \\
+& (\num{0.086}) & (\num{0.106}) \\
+beta\_med & \num{0.084} * & \num{-0.166} *** \\
+& (\num{0.035}) & (\num{0.042}) \\
+gender & \num{0.038} ** & \num{-0.042} ** \\
+& (\num{0.015}) & (\num{0.016}) \\
+TH & \num{0.590} *** & \num{-0.448} *** \\
+& (\num{0.019}) & (\num{0.030}) \\
+TL & \num{0.182} *** & \num{-0.121} *** \\
+& (\num{0.020}) & (\num{0.018}) \\
+TM & \num{0.527} *** & \num{-0.385} *** \\
+& (\num{0.015}) & (\num{0.023}) \\
+AIC & \num{1270.1} & \num{1436.1} \\
+\end{talltblr}
+\end{table}

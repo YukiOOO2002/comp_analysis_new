@@ -1,0 +1,26 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Average Marginal Effects on Contribution},
+note{}={Standard errors in parentheses. * p < 0.1, ** p < 0.05, *** p < 0.01},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-5}{solid, black, 0.05em},
+hline{9}={1-5}{solid, black, 0.05em},
+hline{1}={1-5}{solid, black, 0.1em},
+hline{10}={1-5}{solid, black, 0.1em},
+column{2-5}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& T0 & TL & TM & TH \\
+affiliation & \num{-0.007} & \num{-0.001} & \num{-0.002} & \num{-0.003} \\
+age & \num{-0.019} & \num{-0.003} & \num{0.002} & \num{-0.000} \\
+alpha\_med & \num{-1.225} & \num{-1.304} & \num{0.262} & \num{0.126} \\
+alpha\_positive & \num{0.334} & \num{0.119} & \num{-0.150} & \num{-0.048} \\
+beta\_med & \num{0.223} & \num{0.199} & \num{-0.047} & \num{-0.272} \\
+beta\_positive & \num{-0.033} & \num{0.224} & \num{0.015} & \num{-0.355} \\
+gender & \num{0.030} & \num{0.187} & \num{0.015} & \num{-0.065} \\
+AIC & \num{223.5} & \num{535.5} & \num{287.4} & \num{147.3} \\
+\end{talltblr}
+\end{table}

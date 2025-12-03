@@ -1,0 +1,51 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Random Effect  Probability Regression},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-5}{solid, black, 0.05em},
+hline{32}={1-5}{solid, black, 0.05em},
+hline{1}={1-5}{solid, black, 0.1em},
+hline{35}={1-5}{solid, black, 0.1em},
+column{2-5}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& (1) & (2) & (3) & (4) \\
+(Intercept) & \num{0.059} & \num{0.371}*** & \num{0.035} & \num{0.384}*** \\
+& (\num{0.069}) & (\num{0.076}) & (\num{0.073}) & (\num{0.081}) \\
+alpha\_med & \num{-0.210} & \num{0.113} & \num{-0.095} & \num{-0.581} \\
+& (\num{0.219}) & (\num{0.229}) & (\num{1.030}) & (\num{1.079}) \\
+beta\_med & \num{0.127}* & \num{-0.105}+ & \num{0.276}** & \num{-0.148} \\
+& (\num{0.054}) & (\num{0.056}) & (\num{0.087}) & (\num{0.091}) \\
+TL & \num{0.270}*** & \num{-0.199}*** & \num{0.391}*** & \num{-0.347}*** \\
+& (\num{0.042}) & (\num{0.044}) & (\num{0.063}) & (\num{0.066}) \\
+TM & \num{0.807}*** & \num{-0.325}*** & \num{0.863}*** & \num{-0.353}*** \\
+& (\num{0.035}) & (\num{0.037}) & (\num{0.053}) & (\num{0.056}) \\
+TH & \num{0.891}*** & \num{-0.384}*** & \num{0.945}*** & \num{-0.411}*** \\
+& (\num{0.037}) & (\num{0.039}) & (\num{0.054}) & (\num{0.057}) \\
+age & \num{0.003} & \num{0.003} & \num{0.003} & \num{0.003} \\
+& (\num{0.003}) & (\num{0.003}) & (\num{0.003}) & (\num{0.003}) \\
+gender & \num{0.060}* & \num{-0.035} & \num{0.055}* & \num{-0.025} \\
+& (\num{0.024}) & (\num{0.025}) & (\num{0.024}) & (\num{0.025}) \\
+affiliation & \num{-0.009}*** & \num{-0.000} & \num{-0.010}*** & \num{0.001} \\
+& (\num{0.002}) & (\num{0.002}) & (\num{0.002}) & (\num{0.002}) \\
+alpha\_med × TL &  &  & \num{-3.232}* & \num{4.573}** \\
+&  &  & (\num{1.437}) & (\num{1.505}) \\
+beta\_med × TL &  &  & \num{0.271} & \num{-0.338}+ \\
+&  &  & (\num{0.195}) & (\num{0.204}) \\
+alpha\_med × TM &  &  & \num{-0.014} & \num{0.474} \\
+&  &  & (\num{1.086}) & (\num{1.138}) \\
+beta\_med × TM &  &  & \num{-0.251}* & \num{0.065} \\
+&  &  & (\num{0.127}) & (\num{0.133}) \\
+alpha\_med × TH &  &  & \num{0.215} & \num{0.483} \\
+&  &  & (\num{1.078}) & (\num{1.129}) \\
+beta\_med × TH &  &  & \num{-0.399}* & \num{0.114} \\
+&  &  & (\num{0.165}) & (\num{0.173}) \\
+Num.Obs. & \num{620} & \num{620} & \num{620} & \num{620} \\
+R2 & \num{0.592} & \num{0.164} & \num{0.604} & \num{0.185} \\
+Mean (Contribute) & \num{2.800} & \num{2.800} & \num{2.800} & \num{2.800} \\
+\end{talltblr}
+\end{table}
